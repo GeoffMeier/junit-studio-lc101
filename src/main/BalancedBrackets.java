@@ -30,6 +30,8 @@ public class BalancedBrackets {
                 brackets++;
             } else if (ch == ']') {
                 brackets--;
+            }if (brackets < 0){
+                return false;
             }
         }
         return brackets == 0;
@@ -43,23 +45,14 @@ public class BalancedBrackets {
             } else if (ch == '}' || ch == ')') {
                 brackets--;
             }
+
         }
         return brackets == 0;
     }
+}
 
 
 
-    public static  boolean unbalncedBrackets(String str) {
-
-
-
-       int brackets = 0;
-       str = "L]aunch[code";
-
-
-           if(str.)
-        }
-    }
 
 
 
